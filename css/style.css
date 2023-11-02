@@ -26,16 +26,22 @@ NAVBAR SETTINGS
 ********************************************/
 nav{
     width: 250px;
-    height: 100%;
+    height: calc(100vh - 100px);
     background-color:#000000;
+    position: relative;
 }
 nav .logo{
     padding: 1rem 5rem 1rem 1.2rem;
 }
-nav .playlist-container{
-    padding: 0 1rem;
+/* playlist container rules */
+.playlist-container{
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
+}
+.selected-playlist {
+    max-height: 35vh;
+    overflow-y: auto;
 }
 .selected-playlist ul li{
     display: flex;
@@ -58,7 +64,47 @@ nav .playlist-container{
     display: block;
     margin-right: 10px;
 }
+/* account link rules */
+.account-container{
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.app-download{
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+.app-download i,
+.app-download a{
+    color: gray;
+}
+.app-download a {
+    text-decoration: none;
+}
+.app-download a:hover{
+    color: white;
+}
+.app-download i {
+    margin-right: 10px;
+}
+.account-img{
+    height: 100%;
+    width: 30%;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+.account-img img.fill{
+    object-fit: cover;
+}
+.account-info{
+    display: flex;
+    align-content: center;
+}
 
+/* active status */
 .navbar-active ul li a{
     text-decoration: none;
 } 
@@ -74,8 +120,6 @@ nav .playlist-container{
 .navbar-active li a i{
     margin: 0 1rem;
 }
-
-/* active status */
 .navbar-active ul li a:hover{
     color: white;
 }
