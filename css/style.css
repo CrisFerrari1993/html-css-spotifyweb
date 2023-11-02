@@ -10,3 +10,115 @@ GENERAL PAGE SETTINGS
     font-family: 'Montserrat', sans-serif;
     font-family: 'PT Sans', sans-serif;
 }
+h1, h2, h3, h4, h5, h6{
+    color: white;
+}
+/*******************************************
+ HEAD CONTAINER STYLE SETTINGS
+********************************************/
+#wrapper {
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+/*******************************************
+NAVBAR SETTINGS
+********************************************/
+nav{
+    width: 250px;
+    height: 100%;
+    background-color:#000000;
+}
+nav .logo{
+    padding: 1rem 5rem 1rem 1.2rem;
+}
+nav .playlist-container{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.selected-playlist ul li{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.selected-playlist a{
+    text-decoration: none;
+}
+.selected-playlist h5{
+    color: gray;
+}
+.selected-playlist h5:hover {
+    color: white;
+}
+.playlist-btn i {
+    color: rgb(202, 202, 202);
+    font-size: 2rem;
+    display: block;
+    margin-right: 10px;
+}
+
+.navbar-active ul li a{
+    text-decoration: none;
+} 
+.navbar-active ul li {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.navbar-active li a{
+    color: gray;
+    margin: 0 10px;
+}
+.navbar-active li a i{
+    margin: 0 1rem;
+}
+
+/* active status */
+.navbar-active ul li a:hover{
+    color: white;
+}
+.navbar-active li.active a,
+.navbar-active li.active i{
+    color: white;
+}
+.navbar-active li .active-status{
+    width: 2px;
+    background-color:#adff2f;
+}
+/* HEAD CONTAINER */
+#main-content {
+    flex-grow: 1;
+    background-color:#141922;
+}
+
+/* CONTROLLER SETTINGS */
+#controller{
+    height: 100px;
+    background-color:#282828;
+    z-index: 2;
+}
+/* TOP FIXED LAYHOVER */
+#layhover{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 500;
+}
+#btn {
+    height: fit-content;
+    padding:0.5rem 2rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+#btn a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
