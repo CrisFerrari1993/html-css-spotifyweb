@@ -15,72 +15,98 @@
     <title>Spotify clone (Boolean)</title>
 </head>
 <body>
-    <!-- main -->
+    <!-- mainn -->
     <main>
-        <!-- wrapper -->
         <div id="wrapper">
-            <!-- navbar -->
-            <div class="navbar-container">
-                <nav>
-                    <!-- logo -->
+            <!-- Navbar -->
+            <nav>
+                <div id="navbar">
                     <div class="logo">
                         <img src="img/logo.svg" alt="">
                     </div>
-                    <!-- active link section -->
-                    <div class="navbar-active">
+                    <div class="active-link">
                         <ul>
-                            <li class="active"><div class="active-status"></div><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
-                            <li>
-                                <a href=""><i class="fa-solid fa-magnifying-glass"></i>Cerca</a>
-                            </li>
-                            <li>
-                                <a href=""><i class="fa-solid fa-lines-leaning"></i> Le tue playlist</a>
-                            </li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
                         </ul>
                     </div>
-                    <!-- playlist link section -->
-                    <div class="playlist-container">
-                        <h3>
-                            PLAYLIST
-                        </h3>
-                        <div class="selected-playlist">
-                            <ul>
-                                <li>
-                                    <div class="playlist-btn">
-                                        <i class="fa-solid fa-square-plus"></i>
-                                    </div>
-                                    <a href="#"><h5>Crea Playlist</h5></a>
-                                </li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                                <li><a href=""><h5>Nome Playlist</h5></a></li>
-                            </ul>
+                    <h3>PLAYLIST</h3>
+                    <div class="playlist">
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="account">
+                        <section class="top">
 
-                        </div>
+                        </section>
+                        <section class="bottom">
+
+                        </section>
                     </div>
-                    <!-- account link section bottom -->
-                    <div class="account-container">
-                        <div class="app-download">
-                            <a href=""><i class="fa-regular fa-circle-down" style="color: #c0c0c0;"></i>Installa App</a>
-                        </div>
-                        <div class="account-info">
-                            <div class="account-img"><img src="img/profile.svg" alt=""></div>
-                            <a href=""><h4>John Doe</h4></a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!-- main page container -->
+                </div>
+            </nav>
+            <!-- Main content -->
             <div id="main-content">
-                <!-- top layhover -->
-                <div id="layhover">
-                    <div id="btn">
+                <div id="layover">
+                    <div class="btn">
                         <a href="">EFFETTUA L'UPGRADE</a>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <h2>Recently played</h2>
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                </div>
+                <h2>Creato per John Doe</h2>
+                <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                </div>
+                <h2>Artisti pi&ugrave; popolari</h2>
+                <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                    
                     </div>
                 </div>
             </div>
@@ -88,8 +114,53 @@
     </main>
     <!-- music controller section -->
     <footer>
-        <div id="controller">
+        <div id="music-controller">
+            <div class="controller-side left">
+                <div class="img-little">
+                    <img src="img/sinister.jpeg" alt="sinister" class="fill">
+                </div>
+                <div class="song-info">
+                    <h6>
+                        Sinister
+                    </h6>
+                    <span class="artist-name">Brano Nome</span>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
 
+            </div>
+            <div class="controller-center">
+                <div class="icon white top">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="controller-row_bottom">
+                    <span>0:25</span>
+                    <div class="bar-row">
+                        <div class="now">
+                            <span class="pointer"><i class="fa-solid fa-circle"></i></span>
+                        </div>
+                    </div>
+                    <span>4:35</span>
+                </div>
+            </div>
+            <div class="controller-side right">
+                <div class="icon white">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="bar-row volume">
+                    <div class="now">
+                        <span class="pointer"><i class="fa-solid fa-circle"></i></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
