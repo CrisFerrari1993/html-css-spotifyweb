@@ -20,14 +20,11 @@ a{
     width: 250px;
     height: 100%;
     background-color: black;
-    z-index: 1;
+    padding-left: 1rem ;
 }
 #main-content{
-    flex-grow: 1;
-    width: calc(100% - 250px);
+    width:100%;
     background-color: #141922;
-    overflow-y: auto;
-
 }
 #music-controller{
     width: 100%;
@@ -36,6 +33,45 @@ a{
     display: flex;
     align-content: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 500;
+}
+/**********************************
+NAVBAR RULES
+************************************/
+#navbar h3 {
+    color: white;
+}
+.logo img{
+    width: 70%;
+}
+.logo{
+    padding: 1rem 0;
+}
+/* link item rules */
+.link-item{
+    display: flex;
+    margin: 1rem 0 1rem -1rem;
+    padding-left: 1rem;
+}
+.link-item a{
+    align-self: center;
+    margin-left: 0.5;
+}
+.link-item a h5{
+    color: gray;
+}
+.link-item img {
+    max-width: 13%;
+}
+.active a h5{
+    color: white;
+}
+
+.active{
+    border-left: 3px solid #adff2f;
+    margin: 0 -1rem;
+    padding-left: 1rem;
 }
 /**********************************
 FOOTER RULES
@@ -47,6 +83,9 @@ display: flex;
 }
 .right{
     justify-content: flex-end;
+}
+.left{
+    z-index: 499;
 }
 
 /* controller side sx items rules */
