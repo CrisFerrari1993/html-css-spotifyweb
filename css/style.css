@@ -15,16 +15,20 @@ a{
     height: calc(100vh - 100px);
     width: 100%;
     display: flex;
+    overflow-y: auto;
 }
 #navbar{
     width: 250px;
-    height: 100%;
+    height:calc(100vh - 100px);
     background-color: black;
     padding-left: 1rem ;
+    position: relative;
+    overflow: hidden;
 }
 #main-content{
     width:100%;
     background-color: #141922;
+    overflow-y: auto;
 }
 #music-controller{
     width: 100%;
@@ -34,7 +38,6 @@ a{
     align-content: center;
     justify-content: space-between;
     position: fixed;
-    z-index: 500;
 }
 /**********************************
 NAVBAR RULES
@@ -54,24 +57,121 @@ NAVBAR RULES
     margin: 1rem 0 1rem -1rem;
     padding-left: 1rem;
 }
+.link-item.inactive:hover{
+    opacity: 50%;
+}
+
 .link-item a{
     align-self: center;
     margin-left: 0.5;
 }
-.link-item a h5{
-    color: gray;
-}
+
 .link-item img {
     max-width: 13%;
+
 }
-.active a h5{
+
+.link-item a:hover .hidden{
+    display: block;
+}
+
+.link-item h5 {
+    align-self: center;
+    display: inline;
+}
+.link-item.active h5 a{
     color: white;
+}
+
+.link-item a {
+    color: white
 }
 
 .active{
     border-left: 3px solid #adff2f;
     margin: 0 -1rem;
     padding-left: 1rem;
+}
+/* Playlist rules  */
+.playlist{
+    margin: 0.5rem 0;
+}
+.playlist-anchorated{
+    display: flex;
+}
+.playlist li{
+    margin: 0.8rem 0;
+}
+.playlist ul{
+    overflow-y: auto;
+    max-height: 20vh;
+}
+.playlist  i{
+    color: #c1c1c1;
+    font-size: 2rem;
+    margin-right: 0.8rem;
+}
+.playlist h5{
+    display: inline;
+    align-self: center;
+}
+.playlist h5 a{
+    color: gray;
+}
+.playlist a:hover{
+    color: white;
+}
+/* account rules */
+.account{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 0 1rem;
+}
+.account-img{
+    width: 25px;
+    height: 25px;
+}
+.top{
+    display: flex;
+    padding: 0.5rem 0;
+    opacity: 50%;
+}
+
+.bottom{
+    padding: 0.5rem 0 0.2rem 0;
+    display: flex;
+    border-top: 1px solid grey;
+}
+.top a {
+    color: white;
+}
+.top:hover{
+    opacity: 100%;
+}
+.bottom a{
+    color: white;
+    font-size: 1rem;
+}
+
+.top h5,
+.bottom h5{
+    display: inline;
+    align-self: center;
+    margin-left: 1rem;
+}
+.account-img img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.account-img.fill{
+   background-color: gray;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   padding: 4px;
 }
 /**********************************
 FOOTER RULES
@@ -170,6 +270,7 @@ display: flex;
     height: 50%;
     justify-content: center;
     padding-top: 1rem;
+    border: none;
 }
 .fa-circle-play{
     font-size: 2rem;
