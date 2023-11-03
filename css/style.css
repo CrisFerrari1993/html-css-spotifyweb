@@ -418,6 +418,15 @@ FOOTER RULES
 /**********************************
 MEDIA RULES
 ************************************/
+@media all and (max-height:350px){
+    #layhover {
+        display: none;
+    }
+    #main-content ul{
+        margin-top: 2rem;
+    }
+    
+}
 @media all and (max-width:1000px){
     .col{
         width: calc((100% / 4) - 1rem);
