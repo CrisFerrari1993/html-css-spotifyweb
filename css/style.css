@@ -272,18 +272,20 @@ MAIN SECTION RULES
 /**********************************
 FOOTER RULES
 ************************************/
-.controller-side{
-max-height: 100%;
-width: 25%;
-display: flex;
+/* controller side sx items rules */
+.controller-side {
+    max-height: 100%;
+    width: 25vw;
+    display: flex;
 }
-.right{
+
+.right {
     justify-content: flex-end;
 }
-.left{
+
+.left {
     z-index: 499;
 }
-/* controller side sx items rules */
 .img-little{
     align-self: center;
     margin: 0 1rem;
@@ -374,7 +376,7 @@ display: flex;
 /* end */
 .controller-center{
     max-height: 100%;
-    width: 50%;
+    width: 50vw;
 }
 /* controller center items rules */
 .controller-center .top.white{
@@ -416,7 +418,14 @@ display: flex;
 /**********************************
 MEDIA RULES
 ************************************/
-@media all and (max-width:600px){
+@media all and (max-width:1000px){
+    .col{
+        width: calc((100% / 4) - 1rem);
+        margin: 0.5rem;
+    }
+}
+@media all and (max-width:700px){
+    /* navbar section */
     #navbar{
         width: 50px;
         display: block;
@@ -456,5 +465,9 @@ MEDIA RULES
         padding: 2px;
         margin-bottom: 5px;
     }
-
+    .col{
+        width: calc((100% / 2) - 2rem);
+        margin: 1rem;
+    }
+    /* main-content section */
 }
