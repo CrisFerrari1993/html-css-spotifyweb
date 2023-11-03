@@ -39,6 +39,17 @@ a{
     justify-content: space-between;
     position: fixed;
 }
+#layhover{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 /**********************************
 NAVBAR RULES
 ************************************/
@@ -47,6 +58,9 @@ NAVBAR RULES
 }
 .logo img{
     width: 70%;
+}
+.hidden{
+    display: none;
 }
 .logo{
     padding: 1rem 0;
@@ -70,11 +84,6 @@ NAVBAR RULES
     max-width: 13%;
 
 }
-
-.link-item a:hover .hidden{
-    display: block;
-}
-
 .link-item h5 {
     align-self: center;
     display: inline;
@@ -134,21 +143,22 @@ NAVBAR RULES
     width: 25px;
     height: 25px;
 }
-.top{
+.account-top{
     display: flex;
     padding: 0.5rem 0;
     opacity: 50%;
 }
+
 
 .bottom{
     padding: 0.5rem 0 0.2rem 0;
     display: flex;
     border-top: 1px solid grey;
 }
-.top a {
+.account-top a {
     color: white;
 }
-.top:hover{
+.account-top:hover{
     opacity: 100%;
 }
 .bottom a{
@@ -156,7 +166,7 @@ NAVBAR RULES
     font-size: 1rem;
 }
 
-.top h5,
+.account-top h5,
 .bottom h5{
     display: inline;
     align-self: center;
@@ -172,6 +182,53 @@ NAVBAR RULES
    width: 30px;
    height: 30px;
    padding: 4px;
+}
+/**********************************
+MAIN SECTION RULES
+************************************/
+/* layhover section */
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 2rem;
+    height: 40px;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.btn h4 a {
+    color: white;
+}
+
+.btn:hover {
+    opacity: 30%;
+}
+/* ul section */
+#main-content ul{
+    margin-top: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#main-content li{
+    display: flex;
+    margin: 0 1rem;
+    flex-direction: column;
+}
+#main-content li .active.on{
+    width: 30%;
+    margin: 0 auto;
+    height: 3px;
+    border: 0;
+    padding: 0;
+    background: #adff2f;
+    border-radius: 2rem;
+}
+
+#main-content ul li h4 a{
+    color:#7f8185 ;
 }
 /**********************************
 FOOTER RULES
@@ -217,8 +274,17 @@ display: flex;
     padding-right: 1rem;
     flex-wrap: wrap;
 }
+.icon a {
+    color: #5a5a5a;
+}
+.icon a:hover{
+    color: white;
+}
 .right .icon.white {
     flex-wrap: nowrap;
+}
+.right a{
+    color: white;
 }
 .white{
     color: white;
@@ -234,6 +300,7 @@ display: flex;
     background-color: #5a5a5a;
     display: block;
     border-radius: 1rem;
+    cursor: pointer;
 } 
 .now{
     height: 5px;
@@ -245,6 +312,9 @@ display: flex;
 }
 .bar-row:hover .pointer{
     display: block;
+}
+.bar-row:hover .now{
+    background-color:#adff2f ;
 }
 .pointer,
 .controller-row_bottom .pointer{
@@ -265,19 +335,24 @@ display: flex;
     width: 50%;
 }
 /* controller center items rules */
-.controller-center .top{
+.controller-center .top.white{
+    display: flex;
     width: 100%;
     height: 50%;
     justify-content: center;
     padding-top: 1rem;
     border: none;
 }
+.top.white a{
+    align-self: center;
+}
 .fa-circle-play{
     font-size: 2rem;
 }
-.controller-center .top i{
+.controller-center .top.white i{
     align-self: center;
     margin: 0.5rem;
+    color: white;
 }
 .controller-row_bottom{
     display: flex;
@@ -302,5 +377,42 @@ MEDIA RULES
 @media all and (max-width:600px){
     #navbar{
         width: 50px;
+        display: block;
+        padding: 3px 2px;
     }
+    .logo{
+        display: none;
+    }
+    .hidden{
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    #navbar h3{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .account h5{
+        display: none;
+    }
+    .bottom{
+        border-top: none;
+        display: block;
+    }
+    .account{
+        padding-left: 0.6rem;
+        
+    }
+    .account-top{
+        display: block;
+    }
+    .account-img.fill{
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+
 }

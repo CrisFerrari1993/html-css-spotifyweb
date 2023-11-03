@@ -21,29 +21,46 @@
             <!-- Navbar -->
             <nav>
                 <div id="navbar">
+                    <!-- logo -->
                     <div class="logo">
                         <a href=""><img src="img/logo.svg" alt=""></a>
                     </div>
+                    <!-- hidden logo -->
+                    <div class="hidden">
+                        <a href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
+                    </div>
+                    <!-- links section -->
                     <div class="links">
+                        <!-- home link -->
                         <div class="link-item active">
                             <img class="display" src="img/home.svg" alt="home">
                             <h5><a href="">Home</a></h5>
                         </div>
+                        <!-- search link -->
                         <div class="link-item inactive">
                             <img src="img/search.svg" alt="search">
                             <h5><a href="">Cerca</a></h5>
                         </div>
+                        <!-- library link -->
                         <div class="link-item inactive">
                             <img src="img/libreria.svg" alt="libreria">
                             <h5><a href="">La tua libreria</a></h5>
                         </div>
                     </div>
+                    <!-- hidden home link img -->
+                    <div class="hidden">
+                        <a href="#"><img src="img/home.svg" alt="logo-small"></a>
+                    </div>
+                    <!-- playlist title -->
                     <h3>PLAYLIST</h3>
+                    <!-- playlist link section -->
                     <div class="playlist">
+                        <!-- anchor playlist link -->
                         <div class="playlist-anchorated">
                             <i class="fa-solid fa-square-plus"></i>
                             <h5><a href="">Nuova Playlist</a></h5>
                         </div>
+                        <!-- playlist link scollbar -->
                         <ul>
                             <li><h5><a href="">Nuova Playlist</a></h5></li>
                             <li><h5><a href="">Nuova Playlist</a></h5></li>
@@ -53,10 +70,19 @@
                             <li><h5><a href="">Nuova Playlist</a></h5></li>
                         </ul>
                     </div>
+                    <!-- hidden search logo -->
+                    <div class="hidden">
+                        <a href="#"><img src="img/search.svg" alt="logo-small"></a>
+                    </div>
+                    <!-- hidden library logo -->
+                    <div class="hidden">
+                        <a href="#"><img src="img/libreria.svg" alt="logo-small"></a>
+                    </div>
+                    <!-- account section -->
                     <div class="account">
-                        <section class="top">
+                        <section class="account-top">
                             <div class="account-img">
-                                <img src="img/download.svg" alt="account">
+                                <a href=""><img src="img/download.svg" alt="account"></a>
                             </div>
                             <h5><a href="#">Installa app</a></h5>
                         </section>
@@ -71,18 +97,18 @@
             </nav>
             <!-- Main content -->
             <div id="main-content">
-                <div id="layover">
+                <div id="layhover">
                     <div class="btn">
-                        <a href="">EFFETTUA L'UPGRADE</a>
+                        <h4><a href="">EFFETTUA L'UPGRADE</a></h4>
                     </div>
                 </div>
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><h4><a href="">IN EVIDENZA</a></h4><div class="active on"></div></li>
+                    <li><h4><a href="">PODCAST</a></h4><div class="active off"></div></li>
+                    <li><h4><a href="">CLASSIFICHE</a></h4><div class="active off"></div></li>
+                    <li><h4><a href="">GENERI E MOOD</a></h4><div class="active off"></div></li>
+                    <li><h4><a href="">NUOVE USCITE</a></h4><div class="active off"></div></li>
+                    <li><h4><a href="">SCOPRI</a></h4><div class="active off"></div></li>
                 </ul>
                 <h2>Recently played</h2>
                 <div class="row">
@@ -131,6 +157,7 @@
     <!-- music controller section -->
     <footer>
         <div id="music-controller">
+            <!-- left side of music controller -->
             <div class="controller-side left">
                 <div class="img-little">
                     <img src="img/sinister.jpeg" alt="sinister" class="fill">
@@ -142,37 +169,49 @@
                     <span class="artist-name">Brano Nome</span>
                 </div>
                 <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <a href=""><i class="fa-regular fa-folder"></i></a>
                 </div>
-
             </div>
+            <!-- center side of music controller -->
             <div class="controller-center">
-                <div class="icon white top">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
+                <!-- top section of center controller -->
+                <div class="top white">
+                    <a href=""><i class="fa-solid fa-shuffle"></i></a>
+                    <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                    <a href=""><i class="fa-regular fa-circle-play"></i></a>
+                    <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                    <a href=""><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
+                <!-- bottom section of center controller -->
                 <div class="controller-row_bottom">
+                    <!-- timer past -->
                     <span>0:25</span>
+                    <!-- music time bar -->
                     <div class="bar-row">
+                        <!-- music listen tim bar -->
                         <div class="now">
+                            <!-- pointer of music bar -->
                             <span class="pointer"><i class="fa-solid fa-circle"></i></span>
                         </div>
                     </div>
+                    <!-- total time -->
                     <span>4:35</span>
                 </div>
             </div>
+            <!-- right side of music controller -->
             <div class="controller-side right">
+                <!-- icon section -->
                 <div class="icon white">
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""><i class="fa-solid fa-desktop"></i></a>
+                    <a href=""><i class="fa-solid fa-volume-high"></i></a>
                 </div>
+                <!-- volume bar -->
                 <div class="bar-row volume">
+                    <!-- volume now bar -->
                     <div class="now">
+                        <!-- pointer of volume bar -->
                         <span class="pointer"><i class="fa-solid fa-circle"></i></span>
                     </div>
                 </div>
