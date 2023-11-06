@@ -24,6 +24,9 @@ a{
     padding-left: 1rem ;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #main-content{
     width:100%;
@@ -63,6 +66,7 @@ NAVBAR RULES
 #navbar h3 {
     color: white;
 }
+
 .logo img{
     width: 70%;
 }
@@ -139,12 +143,9 @@ NAVBAR RULES
 }
 /* account rules */
 .account{
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: black;
-    padding: 0 1rem;
+    padding-right: 1rem;
 }
 .account-img{
     width: 25px;
